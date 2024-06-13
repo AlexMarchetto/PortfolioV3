@@ -15,6 +15,7 @@ header {
     text-align: center;
     background-size: cover; /* Couvrir tout l'espace disponible sans répéter l'image */
     background-position: center; /* Centrer l'image dans le header */
+    box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.72);
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
 
 nav.downTrue{
     background-color: #000000;
+    box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.62);
 }
 
 nav.downFalse {
@@ -95,12 +97,11 @@ header h1 {
 }
 
 main{
-    padding: 50px 250px;
-    height: 2000px;
+    padding: 50px 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
+    gap: 200px;
 }
 
 main h2 {
@@ -125,4 +126,136 @@ main .content p {
     line-height: 1.5;
     text-align: justify;
 }
+
+.technique div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.technique div img {
+    width: 150px;
+}
+
+.transversale, .langue {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #F1EAE0;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.56);
+    padding: 70px 70px 0 70px;
+}
+.transversale ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+}
+
+.langue{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #65847F;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.56);
+    padding: 70px 70px 0 70px;
+}
+
+.langue ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    list-style-type: none;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+}
+
+/* projects */
+
+.allProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.allProjects h2 {
+    margin-bottom: 0;
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 600px; /* Largeur du conteneur .project */
+    height: 550px; /* Hauteur du conteneur .project */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optionnel: ajoute un peu d'ombre pour le style */
+}
+
+.project img {
+    width: 350; /* Assure que l'image prend toute la largeur du conteneur .project */
+    max-height: 350px;
+    height: auto;
+}
+
+.project h3, .project p {
+    text-align: center; /* Centre le texte du titre et de la description */
+    padding: 0 10px;
+}
+.project h3 {
+    font-size: 1.7em; /* Taille du titre */
+}
+
+.project p {
+    font-size: 1.3em; /* Taille de la description */
+}
+/* footer */
+
+footer {
+    background-color: #242424;
+    color: #fff;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 0px -6px 24px 0px rgba(0,0,0,0.71);
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+    font-size: large;
+}
+
+footer div div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer p {
+    margin-top: 100px
+}
+
+
 
