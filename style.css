@@ -75,7 +75,7 @@ nav ul a {
     flex-grow: 1; /* Permet aux liens de prendre toute la largeur disponible */
     text-align: center;
     color: #fff;
-    font-size: larger;
+    font-size: 23px;
     text-decoration: none;
     padding: 10px 0; /* Ajouter du padding pour augmenter la zone cliquable */
     transition: color 0.3s; /* Transition pour l'effet de survol */
