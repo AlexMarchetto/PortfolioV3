@@ -1,13 +1,13 @@
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    height: 40vh;
+    height: 30vh;
     background-image: url('ciel.jpeg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin réel de votre image */
     background-color: #333; /* Couleur de fond en cas de non-chargement de l'image */
     color: #fff;
@@ -18,10 +18,35 @@ header {
 }
 
 nav {
-    background-color: #444;
-    padding: 0; /* Réduire le padding pour affiner la navbar */
-    text-align: center;
-    height: 60px; /* Définir une hauteur spécifique pour la navbar */
+    position: fixed; /* Fixer la navbar en haut */
+    top: 0; /* Aligner en haut */
+    width: 100%; /* S'assurer que la navbar s'étend sur toute la largeur */
+    padding: 0;
+    height: 60px;
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+    z-index: 1000; /* S'assurer que la navbar reste au-dessus des autres éléments */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.downTrue{
+    background-color: #000000;
+}
+
+nav.downFalse {
+    background-color: transparent; /* Initialement transparent */
+}
+
+nav.downTrue ul li:hover{
+    background-color: #555;
+}
+
+.mainLink {
+    color: #fff;
+    font-size: 20pt;
+    text-decoration: none;
+    margin-left: 30px;
 }
 
 nav ul {
@@ -29,10 +54,11 @@ nav ul {
     justify-content: right; /* Centrer les liens */
     align-items: stretch; /* Étirer les éléments pour qu'ils prennent toute la hauteur */
     gap: 0; /* Supprimer l'espace entre les éléments */
-    margin: 0 20px 0 0;
+    margin: 0;
     padding: 0;
     list-style-type: none;
     height: 100%;
+    margin-right: 30px;
 }
 
 nav ul li {
@@ -42,15 +68,12 @@ nav ul li {
     margin: 0;
 }
 
-nav ul li:hover {
-    background-color: #555;
-}
-
 nav ul a {
     display: block;
     flex-grow: 1; /* Permet aux liens de prendre toute la largeur disponible */
     text-align: center;
     color: #fff;
+    font-size: larger;
     text-decoration: none;
     padding: 10px 0; /* Ajouter du padding pour augmenter la zone cliquable */
     transition: color 0.3s; /* Transition pour l'effet de survol */
@@ -60,7 +83,7 @@ header div {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 80%;
+    height: 100%;
     margin-left: 250px;
 }
 
@@ -69,5 +92,37 @@ header h1 {
     font-size: 50pt;
     letter-spacing: 2px;
     margin: 0;
+}
+
+main{
+    padding: 50px 250px;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+main h2 {
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+main .content {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 50px;
+}
+
+main .content img {
+    width: 400px;
+}
+
+main .content p {
+    font-size: 20pt;
+    line-height: 1.5;
+    text-align: justify;
 }
 
