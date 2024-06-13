@@ -257,5 +257,113 @@ footer p {
     margin-top: 100px
 }
 
+/* form */
+
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+	padding-top: 50px;
+}
+
+.form div{
+    background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+    align-items: center;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px #0005;
+	width: 30vw;
+}
+
+.form div span{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+form {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px #0005;
+	width: 30vw;
+}
+
+form h2 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+form input:not([type="submit"]), form textarea {
+	font-size: 20px; /* Augmentez la taille du texte selon vos besoins */
+    border: none;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    outline: none;
+    background-color: white;
+    color: black;
+    border-bottom: solid 1px #31525B;
+    border-radius: 5px 5px 0 0;
+}
+
+form textarea {
+	border-radius: 5px;
+	width: calc(100% - 42px);
+	resize: vertical;
+	height: 15vh;
+	border: 1px solid #31525B;
+}
+
+form label {
+	position: relative;
+}
+
+form label span {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	background-color: #31525B;
+	width: 0;
+	transition: .30s;
+}
+
+form label input:valid+span {
+	width: 100%;
+}
+
+form input[type="submit"] {
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: solid 1px #31525B;
+	color: #31525B;
+	background-color: transparent;
+	transition: .2s;
+    font-size: 20px;
+}
+
+form input[type="submit"]:hover {
+	background-color: #31525B;
+	color: #fff;
+}
+
+form span {
+	font-size: 16px;
+}
+
 
 
