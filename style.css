@@ -225,37 +225,76 @@ main .content p {
 .project p {
     font-size: 1.3em; /* Taille de la description */
 }
-/* footer */
-
-footer {
-    background-color: #242424;
+/* Styles du pied de page */
+.footer {
+    margin-top: 90px;
+    background-color: #1e1e1e;
     color: #fff;
-    padding: 50px;
-    width: 100%;
-    box-shadow: 0px -6px 24px 0px rgba(0,0,0,0.71);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.56);
 }
 
-footer > div {
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 100px;
+}
+
+.footer-content div {
+    width: 400px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-left, .footer-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-right a, .footer-left a, .footer-middle a{
+    color: #fff;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    text-align: center;
-    font-size: large;
+    gap: 10px;
+    font-size: 18px;
 }
 
-footer div div {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.footer-right a:hover, .footer-left a:hover, .footer-middle a:hover{
+    text-decoration: underline;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+.footer img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
-footer p {
-    margin-top: 100px
+
+.footer-copyright {
+    font-size: 12px;
+    margin-top: 70px;
 }
 
 /* form */
@@ -364,6 +403,12 @@ form input[type="submit"]:hover {
 
 form span {
 	font-size: 16px;
+}
+
+.form div a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
 }
 
 
