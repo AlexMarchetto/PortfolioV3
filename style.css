@@ -41,7 +41,12 @@ nav.downFalse {
 }
 
 nav.downTrue ul li:hover{
-    background-color: #555;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+nav.downTrue ul li:hover a{
+    color: #000000;
 }
 
 .mainLink {
@@ -68,6 +73,7 @@ nav ul li {
     align-items: center;
     padding: 10px;
     margin: 0;
+    transition: 0.3s;
 }
 
 nav ul a {
@@ -106,8 +112,11 @@ main{
 
 main h2 {
     font-size: 30pt;
-    text-align: center;
     margin-bottom: 100px;
+}
+
+main:not(#mainPage) {
+    text-align: center;
 }
 
 main .content {
@@ -411,5 +420,67 @@ form span {
     color: black;
 }
 
+/* formation expérience*/
+.formation > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
 
+}
+
+.formation-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 50px;
+}
+
+.formation-content div {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.formation .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.formation .img img {
+    width: 280px;
+}
+
+.formation .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+}
+
+.formation h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.formation h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px 30px 30px 10px;
+}
+
+.formation .description p{
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.5;
+}
 
