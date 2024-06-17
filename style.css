@@ -421,7 +421,7 @@ form span {
 }
 
 /* formation expérience*/
-.formation > div {
+.formation > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -484,3 +484,26 @@ form span {
     line-height: 1.5;
 }
 
+.sports {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 0px;
+    width: 100%;
+}
+
+.sport-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 70%;
+}
+
+.sport-content img {
+    width: 200px;
+}
+
+.sport-content h3 {
+    font-size: 30px;
+    margin-top: 0px;
+}
