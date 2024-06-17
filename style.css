@@ -212,7 +212,7 @@ main .content p {
     align-items: center;
     gap: 10px;
     width: 600px; /* Largeur du conteneur .project */
-    height: 550px; /* Hauteur du conteneur .project */
+    height: 570px; /* Hauteur du conteneur .project */
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optionnel: ajoute un peu d'ombre pour le style */
 }
